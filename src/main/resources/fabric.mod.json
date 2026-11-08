@@ -1,0 +1,23 @@
+{
+	"schemaVersion": 1,
+	"id": "glade_scribe",
+	"version": "${version}",
+	"name": "Glade - Scribe",
+	"description": "Scribe module for The Far Glade. Requires glade-core.",
+	"authors": ["DarkShamanism"],
+	"environment": "client",
+	"entrypoints": {
+		"glade:module": [{ "value": "com.darkshamanism.lotcscholar.modules.scribe.ScribeModule", "adapter": "kotlin" }]
+	},
+	"depends": {
+		"fabricloader": ">=0.18.6",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*",
+		"fabric-language-kotlin": "*",
+		"gladecore": "*"
+	},
+	"custom": {
+		"modmenu": { "parent": "gladecore" }
+	}
+}
